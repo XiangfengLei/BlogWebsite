@@ -2,7 +2,7 @@
 title: RESUME  
 date: 2017-12-08 20:26:44  
 type: "tags"  
-tags: Resume  
+tags: PersonalStyle
 categories: 
 
 ---

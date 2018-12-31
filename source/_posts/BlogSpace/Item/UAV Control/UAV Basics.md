@@ -1,9 +1,10 @@
 ---
 title: UAV Basics
 date: 2018-12-31 19:50:34  
-tags: BlogSpace  
+tags: BlogSpace 
+mathjax: ture
 categories:  
-- item   
+- Item
 - UAV Control  
 
 ---
