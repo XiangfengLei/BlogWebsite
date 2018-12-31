@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+themes/
+.deploy_git/
+scaffolds/
+mintty.exe.stackdump
+package.json
+package-lock.json
