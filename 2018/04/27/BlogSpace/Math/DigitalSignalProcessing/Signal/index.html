@@ -8,21 +8,21 @@
   <link rel="dns-prefetch" href="http://www.leixiangfeng.com">
   <title>Signal(信号) | 雷祥锋-这个人</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、离散信号—序列离散时间信号x(n)可以看成时对模拟信号x(t)的等间隔抽样。表示为：">
+  <meta name="description" content="H(p,q)=- \sum_x p(x) \log q(x)一、离散信号—序列离散时间信号x(n)可以看成时对模拟信号x(t)的等间隔抽样。表示为：">
 <meta name="keywords" content="BlogSpace">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Signal(信号)">
 <meta property="og:url" content="http://www.leixiangfeng.com/2018/04/27/BlogSpace/Math/DigitalSignalProcessing/Signal/index.html">
 <meta property="og:site_name" content="雷祥锋-这个人">
-<meta property="og:description" content="一、离散信号—序列离散时间信号x(n)可以看成时对模拟信号x(t)的等间隔抽样。表示为：">
+<meta property="og:description" content="H(p,q)=- \sum_x p(x) \log q(x)一、离散信号—序列离散时间信号x(n)可以看成时对模拟信号x(t)的等间隔抽样。表示为：">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://i.imgur.com/pV0FtQs.png">
 <meta property="og:image" content="https://i.imgur.com/nGANbri.png">
 <meta property="og:image" content="https://i.imgur.com/am28sFP.png">
-<meta property="og:updated_time" content="2018-12-31T07:13:33.947Z">
+<meta property="og:updated_time" content="2018-12-31T12:47:22.468Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Signal(信号)">
-<meta name="twitter:description" content="一、离散信号—序列离散时间信号x(n)可以看成时对模拟信号x(t)的等间隔抽样。表示为：">
+<meta name="twitter:description" content="H(p,q)=- \sum_x p(x) \log q(x)一、离散信号—序列离散时间信号x(n)可以看成时对模拟信号x(t)的等间隔抽样。表示为：">
 <meta name="twitter:image" content="https://i.imgur.com/pV0FtQs.png">
   
   
@@ -64,7 +64,7 @@
 			
 				<li><a href="/">Home</a></li>
 	        
-				<li><a href="/tags/Resume/">PersonalStyle</a></li>
+				<li><a href="/tags/PersonalStyle/">PersonalStyle</a></li>
 	        
 				<li><a href="/tags/BlogSpace/">BlogSpace</a></li>
 	        
@@ -150,7 +150,7 @@
 				
 					<li style="width: 33.333333333333336%"><a href="/">Home</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/Resume/">PersonalStyle</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/PersonalStyle/">PersonalStyle</a></li>
 		        
 					<li style="width: 33.333333333333336%"><a href="/tags/BlogSpace/">BlogSpace</a></li>
 		        
@@ -187,7 +187,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、离散信号—序列"><a href="#一、离散信号—序列" class="headerlink" title="一、离散信号—序列"></a>一、离散信号—序列</h2><p>离散时间信号x(n)可以看成时对模拟信号x(t)的等间隔抽样。表示为：<br><img src="https://i.imgur.com/pV0FtQs.png" alt=""><br><a id="more"></a> </p>
+        <script type="math/tex; mode=display">H(p,q)=- \sum_x p(x) \log q(x)</script><h2 id="一、离散信号—序列"><a href="#一、离散信号—序列" class="headerlink" title="一、离散信号—序列"></a>一、离散信号—序列</h2><p>离散时间信号x(n)可以看成时对模拟信号x(t)的等间隔抽样。表示为：<br><img src="https://i.imgur.com/pV0FtQs.png" alt=""><br><a id="more"></a> </p>
 <h2 id="二、序列的运算"><a href="#二、序列的运算" class="headerlink" title="二、序列的运算"></a>二、序列的运算</h2><p>1、移位：x(n)，x(n-m)是指序列右移m位。<br>2、翻褶：序列x(n)，x(-n)是以n=0的纵轴为对称轴翻褶<br>3、和：同序列号n的序列值相加<br>4、积：同序列号n的序列值逐项对应相乘,z(n)=x(n)y(n)<br>5、累加：$y(n)=\sum_{k=-\infty}^n{x(k)}$<br>6、差分运算：<br>前向差分：$\Delta{x(n)}=x(n+1)-x(n)$<br>后向差分：$\nabla{x(n)} = x(n)-x(n-1)$<br>得：$\nabla{x(n)} = \Delta{x(n-1)}$<br>理解：本次的后向差分等于上一次的前向差分<br>7、序列时间的尺度变换<br>(1)抽取<br>$xd(n)=x(D_n)$表示从序列x(n)的每连续D个抽样值中取出一个组成的新序列。<br>理解：以1/D倍的抽样频率（fs/D）对原连续信号进行抽样，相当于将抽样时间间隔由T变成DT。<br>(2)零值插入<br>把原序列的两个相邻抽样值之间插入（I-1）个零值（I为整数）</p>
 <h2 id="三、卷积"><a href="#三、卷积" class="headerlink" title="三、卷积"></a>三、卷积</h2><p>$y(n)=\sum_{m=-\infty}^\infty{x(m)h(n-m)}=x(n)*h(n)$<br>卷积运算满足交换律和分配率<br>意义理解：输入信号x(n),信号在系统的输出权重为h(n),在该时间段内，系统总响应为y(n).<br>某一时刻m输入信号x(m)，在时刻m之后（即n-m时间段内）系统输出的和（在m之后的时间内，信号在系统内的作用变化为h(n-m)）为该时刻的输入信号在这个时间段内的系统响应。<br>计算方法：<br>（1）图解加上解析的方法<br>（2）列表方法: 翻褶、移位、相乘、相加<br>（3）对位相乘加法<br>（4）向量矩阵乘法<br>注：时域相乘，频域卷积。时域卷积，频域相乘</p>
 <h2 id="四、序列的相关性"><a href="#四、序列的相关性" class="headerlink" title="四、序列的相关性"></a>四、序列的相关性</h2><p>相关是指：两个确定信号或随机信号之间的相互关系。<br>互相关函数：  </p>
@@ -353,7 +353,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 XiangfengLei
+    		&copy; 2019 XiangfengLei
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -461,7 +461,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Resume</a>
+                <a href="javascript:void(0)" class="js-tag color4">PersonalStyle</a>
               </li>
             
             <div class="clearfix"></div>
